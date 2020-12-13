@@ -19,4 +19,15 @@
 # 停止环境
 - $ deactivate
 3. 创建项目
-- django-admin
+- $ django-admin startproject learning_log .
+4. 迁移数据库
+- $ python manage.py migrate
+5. 运行项目
+- $ python manage.py runserver
+6. 创建app
+- $ python manage.py startapp learning_logs
+7. 修改model中的数据后更新数据库
+- $ python manage.py makemigrations learning_logs
+- $ python manage.py migrate
+8. 创建超级用户admin
+- $ python manage.py createsuperuser
